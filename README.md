@@ -17,20 +17,23 @@ Este projeto é um jogo **Connect Four** (Quatro em Linha) desenvolvido como tra
 
 ## Instalação e Execução
 
-1. **Clone o repositório:**
+1. **Clona o repositório:**
    ```bash
    git clone https://github.com/tomalexmartins/connect-four.git
 
-2. **Aceder a pasta do projeto:**
-cd connect-four
+2. **Acede a pasta do projeto:**
+    ```bash
+   cd connect-four
 
-3. **Instalar as dependências:**
-npm install
+4. **Instala as dependências:**
+    ```bash
+   npm install
 
-4. **Inicie o servidor de desenvolvimento:**
-npm start
+6. **Inicia o servidor de desenvolvimento:**
+    ```bash
+   npm start
 
-O projeto será executado em http://localhost:3000.
+O projeto será executado em **http://localhost:3000**.
 
 **.gitignore**
 

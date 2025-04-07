@@ -24,14 +24,15 @@ Este projeto é um jogo **Connect Four** (Quatro em Linha) desenvolvido como tra
 2. **Acede a pasta do projeto:**
     ```bash
    cd connect-four
+   cd connect-four-game
 
 4. **Instala as dependências:**
     ```bash
    npm install
 
-6. **Inicia o servidor de desenvolvimento:**
+5. **Inicia o servidor de desenvolvimento:**
     ```bash
-   npm start
+   npm run dev
 
 O projeto será executado em **http://localhost:3000**.
 

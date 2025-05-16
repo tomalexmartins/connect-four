@@ -4,7 +4,7 @@ function HomePage() {
   return (
     <div className="min-h-screen bg-cream text-navy font-pixel flex flex-col items-center justify-center">
       <h1 className="text-5xl text-redish">HOME PAGE</h1>
-      <GameTitle fontSize={"text-[100px]"} />
+      <GameTitle fontSize={"text-[100px]"} stokeWeight={"15px"} />
     </div>
   );
 }

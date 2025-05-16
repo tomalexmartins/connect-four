@@ -1,6 +1,19 @@
-@import "tailwindcss";
-
 @font-face {
-  font-family: "PixelifySans";
+  font-family: "Pixel";
   src: url("/fonts/PixelifySans-VariableFont_wght.ttf");
 }
+
+@font-face {
+  font-family: "ArOne";
+  src: url("/fonts/PixelifySans-VariableFont_wght.ttf");
+}
+
+@theme {
+  --color-redCrimson: oklch(0.61 0.2082 22.24);
+  --color-whiteParchment: oklch(0.98 0.0184 137.8);
+  --color-yellowSunshine: oklch(0.95 0.2035 107);
+  --color-blueSkypop: oklch(0.75 0.1196 256.97);
+  --color-blueIndigo: oklch(0.4 0.1434 258.92);
+}
+
+@import "tailwindcss";

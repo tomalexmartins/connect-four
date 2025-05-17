@@ -9,7 +9,7 @@ function PlayerNameTf({ playerNumber, value, onChange, color }) {
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={`insert player ${playerNumber} name`}
-        className={`bg-${color} text-black placeholder-black font-[Pixel] font-normal tracking-[1px] leading-[1.1] w-[500px] h-[83px] border-[5px] pl-[16px]`}
+        className={`${color} text-black placeholder-black font-[Pixel] font-normal tracking-[1px] leading-[1.1] w-[500px] h-[83px] border-[5px] pl-[16px]`}
       />
     </div>
   );

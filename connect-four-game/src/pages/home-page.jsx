@@ -1,12 +1,24 @@
-import GameTitle from "../components/game-title";
+import IconButton from "../components/buttons/button-icon";
 
-function HomePage() {
+const HomePage = () => {
   return (
-    <div className="min-h-screen bg-cream text-navy font-pixel flex flex-col items-center justify-center">
-      <h1 className="text-5xl text-redish">HOME PAGE</h1>
-      <GameTitle fontSize={"text-[100px]"} stokeWeight={"15px"} />
+    <div className="flex items-center justify-center h-screen gap-[220px]">
+        {/* Coluna da Esquerda */}
+        <div className="pl-[268px] flex flex-col text-[30px]">
+          
+          <IconButton label="how to play?" className="text-[30px] " 
+          width={250}
+          height={70} />
+        </div>
+
+        {/* Coluna da Direita */}
+        <div className="flex flex-col items-center gap-[42px] pr-[140px]">
+          <IconButton label="player vs player" className="text-[32px] " />
+          <IconButton label="player vs computer"className="text-[32px] "  />
+        </div>
+      
     </div>
   );
-}
+};
 
 export default HomePage;

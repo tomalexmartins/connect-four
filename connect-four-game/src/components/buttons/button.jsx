@@ -1,6 +1,7 @@
-const Button = ({ label, textColor = "text-black" }) => (
+const Button = ({ label, textColor = "text-black", onClick }) => (
   <button
-    className={`justify-center w-[500px] h-[83] bg-whiteParchment border-[5px] border-black `}
+    onClick={onClick}
+    className={`justify-center w-[500px] h-[83px]  bg-whiteParchment border-[5px] border-black cursor-pointer hover:opacity-50 transition-opacity duration-200`}
   >
     <p
       className={`${textColor} tracking-[1px] font-[Pixel] font-normal text-[50px]`}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PlayerNameTf from "./player-name-textfield";
-import Button from "./buttons/button";
+import Button from "../buttons/button";
 
 function StartGameModal() {
   const [player1Name, setPlayer1Name] = useState("");

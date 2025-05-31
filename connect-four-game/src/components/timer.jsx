@@ -1,21 +1,42 @@
+// Timer.jsx
+import { useEffect, useState } from "react";
 import TextWithStroke from "../helpers/text-stoke";
 
-const Timer = () => {
+const Timer = ({ currentPlayer, onTimeUp, isPaused }) => {
+  const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+    if (isPaused) return;
+
+    const timer = setInterval(() => {
+      setSeconds((prev) => {
+        if (prev >= 10) {
+          onTimeUp();
+          return 0;
+        }
+        return prev + 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [currentPlayer, isPaused]);
+
+  const formatTime = (sec) => `00:${sec.toString().padStart(2, "0")}`;
+
   return (
-    <div className="flex flex-col space-y-2 font-[Pixel] text-[24px] text-white items-center">
+    <div className="flex flex-col font-[Pixel] items-center space-y-1">
       <TextWithStroke
-        text={"00:00"}
-        textColor={"text-white"}
-        textSize={"text-[100px]"}
-        strokeWeight={"10px"}
+        text={formatTime(seconds)}
+        textColor="text-white"
+        textSize="text-[64px]"
+        strokeWeight="8px"
       />
       <TextWithStroke
-        text={"Player 1's turn"}
-        textColor={"text-white"}
-        textSize={"text-[40px]"}
-        strokeWeight={"6px"}
+        text={`${currentPlayer}'s turn`}
+        textColor="text-white"
+        textSize="text-[20px]"
+        strokeWeight="3px"
       />
-      <p></p>
     </div>
   );
 };

@@ -1,3 +1,4 @@
+// Componente de botão pequeno estilizado para ser usado com uma label e um evento de clique
 const SmallButton = ({ label, click }) => (
   <button
     onClick={click}
